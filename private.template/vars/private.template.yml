@@ -1,0 +1,13 @@
+nginx_custom_vhost: False   # You should really probably use a cusom vhost, but try if possible to use variables below
+
+nginx_ip: *
+nginx_port: 80
+nginx_default_server: False
+nginx_server_name: example.com
+nginx_root: /usr/share/nginx/www 
+
+nginx_ssl: False
+nginx_ssl_certificate: 
+nginx_ssl_certificate_key:
+
+

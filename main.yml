@@ -1,0 +1,15 @@
+---
+# This Playbook deploys/manages nginx 
+
+- hosts: nginx
+  vars_files:
+    - vars/main.yml
+    - vars/private.yml
+  user: root
+  roles:
+    - {role: ssl-certs, when: nginx_ssl == True}
+  tasks:
+  - include: tasks/main.yml
+
+#  handlers:
+#   - include: handlers/main.yml
