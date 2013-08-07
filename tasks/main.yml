@@ -1,5 +1,5 @@
 - name: Install nginx 
-  apt: pkg=nginx state=installed
+  apt: pkg=nginx state=installed update_cache=yes
 
 - name: Create/sync the site configuration
   template: src=$nginx_vhost_template dest=/etc/nginx/sites-available/$nginx_site mode=0755
