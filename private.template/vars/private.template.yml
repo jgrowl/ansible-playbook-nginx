@@ -1,6 +1,7 @@
-nginx_custom_vhost: False   # You should really probably use a cusom vhost, but try if possible to use variables below
+# You will most definitly need to override the basic template provided, but try to use the variables! 
+nginx_vhost_template: root/etc/nginx/sites-available/site.j2 
 
-nginx_ip: *
+nginx_ip: "*"
 nginx_port: 80
 nginx_default_server: False
 nginx_server_name: example.com
